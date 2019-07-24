@@ -3,7 +3,9 @@ body{
 	overflow-x: hidden;
 	margin: 0;
 	overflow-y: hidden;
-	background: url("assets/background.jpeg");
+	background: url("assets/chatroom.jpg");
+	background-position: center;
+	background-size: contain;
 }
 
 
@@ -50,31 +52,32 @@ body{
 
 .message{
 	width: 18vw;
-	height: 10vh;
 	background: #efefef;
 	position: relative;
 	top: 20%;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 3.2vmin;
 	color: #111;
-	padding: 1vmin;
+	padding: 2vmin;
 	line-height: 3.4vmin;
 	left: 1%;
 	transition: 300ms;
+	box-shadow: 4px 4px 20px 0px #000;
+
 }
 
 .user-message{
 	width: 18vw;
 	transition: 300ms;
-	height: 10vh;
 	background: #efefef;
 	position: relative;
 	top: 10%;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 3.2vmin;
 	color: #111;
-	padding: 1vmin;
+	padding: 2vmin;
 	line-height: 3.4vmin;
+	box-shadow: 4px 4px 20px 0px #000;
 	left: 68%;
 }
 .message-area{
