@@ -4,7 +4,7 @@ $(function(){
 		var i=0;
 
 	$('input').keydown(function(e){
-
+		$('.message-area').animate({scrollTop:$('.message').offset().top}, 1000)
 		var x=e.keyCode;
 		var value=$('input').val();
 
