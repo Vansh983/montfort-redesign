@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.landtext, .line').addClass('active')
   }, 600)
   setInterval(function(){
-    $('video').play()
+    // $('video').play()
   }, 0)
   $('.bars').click(function () {
     $('.bar1').toggleClass('bar1_ac')
@@ -11,5 +11,4 @@ $(document).ready(function(){
     $('.bar3').toggleClass('bar3_ac')
     $('.profile').toggleClass('menu_ac')
   })
-
 })

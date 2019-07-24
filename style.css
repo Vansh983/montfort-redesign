@@ -83,16 +83,16 @@ ul{
   margin-left: 0;
 }
 .bar1_ac{
-  background-color: rgb(41, 48, 59);
+  /* background-color: rgb(41, 48, 59); */
   transform: rotate(45deg);
 }
 .bar2_ac{
-  background-color: rgb(41, 48, 59);
+  /* background-color: rgb(41, 48, 59); */
   margin-top: -2px;
   transform: rotate(-45deg);
 }
 .bar3_ac{
-  background-color: rgb(41, 48, 59);
+  /* background-color: rgb(41, 48, 59); */
   opacity: 0;
 }
 ul{
@@ -186,16 +186,16 @@ video{
 
 
  .aboutp{
-
-   height: 40vh;
-
-
-/* Change about image here */
-
-     background-image: url('assets/logo.png');
+   /* margin-top: 5vh; */
+   height: 50vh;
+     background-image: url('assets/logo-g.png');
      background-repeat: no-repeat;
      background-position: center;
      background-size: contain;
+ }
+ .abp{
+   margin-top: 5vh;
+
  }
 .abouthead{
   color: #000;
@@ -225,7 +225,7 @@ video{
   padding-left: 10vh;
 }
 .mission-para{
-  font-size: 17px;
+  font-size: 19px;
   width: 70%;
   margin: auto;
   font-family: 'Raleway';
@@ -233,18 +233,29 @@ video{
 
 .headers{
   color: #000;
-  font-size: 40px;
+
   font-family: 'Montserrat';
   padding-top: 15vh;
 }
+.news{
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  background-image: linear-gradient(to right, #3584a7,  #30d2be);
+
+}
 
 .members_clan{
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 100%;
 }
 .member_img{
   font-family: 'Montserrat';
 
+    padding: 0;
+    padding-bottom: 5vh;
+    margin-left: 3%;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px -2px #dededede;
 }
 .member_img h3{
   color: #459dff;
@@ -256,7 +267,7 @@ video{
   font-family: 'Raleway';
     height: 35vh;
     padding-top: 5vh;
-    border-right: 1px solid #b1b1b1;
+    border-right: 1px solid #3584a7;
 }
 .card3{
   border: none;
@@ -279,11 +290,10 @@ footer{
   height: 55vh;
   width: 60%;
   margin: auto;
-  margin-top: 20vh;
   /* border-radius: 2%; */
-  background-color: #3e3e3e;
+  background-color: #fff;
   box-shadow: 0px 2px 15px -3px #000;
-  border-bottom: 5vh solid #252525;
+  /* border-bottom: 5vh solid #252525; */
 }
 .divider{
   width: 100%;
@@ -291,6 +301,15 @@ footer{
   padding: 0;
   margin: 0;
   max-width: 100%;
+}
+.mission{
+  background-image: url('assets/missionbg.png');
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 20vh !important;
 }
 .half{
   width: 50%;
@@ -305,7 +324,7 @@ footer{
 .header{
   margin-left: 10%;
   font-size: 40px;
-  color: #eb466b;
+  color: #3584a7;
   font-family: 'Montserrat';
 }
 .line-c {
@@ -313,16 +332,19 @@ footer{
   margin-left: 10.5%;
   width: 50px;
   margin-top: 2%;
-  background-color: #eb466b;
+  background-color: #3584a7;
+}
+.abp{
+  background-image: url('assets/bro.jpg');
 }
 input{
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #3584a7;
   font-size: 18px;
   padding: 10px;
-  color: #fff;
+  color: #3584a7;
   width: 60%;
   margin-top: 1vh;
   margin-left: 4vw;
@@ -336,19 +358,45 @@ button{
   font-family: 'Montserrat';
   border: none;
   outline: none;
-  border: 1px solid #fff;
+  border: 1px solid #3584a7;
   cursor: pointer;
-  color: #eb466b;
-  background-color: #fff;
   font-size: 15px;
+  color: #3584a7;
+  transition: 300ms;
 }
+button:hover{
+  color: #fff;
 
+  background-color: #3584a7;
+
+}
+.fa{
+  font-size: 40px;
+}
 #mess{
   padding-top: 30px;
+}
+@media screen and (min-width:700px) {
+  .member_img{
+    width: 30%;
+  }
+  .bar1_ac{
+    margin-left: 150px;
+  }
+  .bar2_ac{
+    margin-left: 150px;
+  }
+  .bar3_ac{
+    margin-left: 150px;
+  }
+
 }
 @media screen and (max-width:700px) {
   body{
 
+  }
+  .line{
+    display: none;
   }
   .card{
     width: 90%;
@@ -368,12 +416,18 @@ button{
   transform: translate(0px, 0px);
   opacity: 1;
 }
-
-@media screen and (max-width: 500px){
+.white{
+  background-color: #fff;
+}
+@media screen and (max-width: 700px){
     div{
       padding-right: 0 !important;
       padding-left: 0 !important;
       margin-right: auto !important;
+    }
+    p{
+      width: 80%;
+      margin: auto;
     }
     .card_contact{
         border: none;
@@ -409,21 +463,27 @@ button{
       font-size: 13px;
       letter-spacing: 2px;
     }
-    .menu{
-      display: block;
-      width: 100%;
-    }
+
     .bars{
       display: block;
       right: 10%;
     } */
+    .ham{
+      display: block;
+      width: 100%;
+    }
     .line{
       width: 100px;
     }
-    /* .menu-ac{
-      z-index: 300;
-      opacity: 1;
+    .profile{
+      width: 100%;
+      margin-left: -100vw;
     }
+     .menu_ac{
+
+      margin-left: 0 !important;
+    }
+    /*
     .noflow{
       overflow: hidden;
     }
