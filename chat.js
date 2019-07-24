@@ -15,7 +15,7 @@ $(function(){
 			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 		},400)
 			setTimeout(function(){
-			$('.message-area').append('<div class="message"><p>Okay, '+value+', and?</p></div>')
+			$('.message-area').append('<div class="message"><p>Okay,'+value+', and?</p></div>')
 		},900)
 			}
 			else if(i==1){
@@ -23,7 +23,7 @@ $(function(){
 			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 		},400)
 			setTimeout(function(){
-			$('.message-area').append('<div class="message"><p>Yaha par ek aur solution</p></div>')
+			$('.message-area').append('<div class="message"><p>Would you like to speak to a councellor?</p></div>')
 		},900)
 			}
 			else if(i==2){
@@ -31,11 +31,11 @@ $(function(){
 			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 		},400)
 			setTimeout(function(){
-			$('.message-area').append('<div class="message"><p>Le ek aur</p></div>')
-
-			setTimeout(function(){
-							$('.message-area').append('<div class="message"><p>Ek aur</p></div>')
-			}, 500)
+				if (value == 'yes') {
+					$('.message-area').append('<div class="message"><p>You said yes</p></div>')
+				}else if (value == 'no') {
+					$('.message-area').append('<div class="message"><p>You said no</p></div>')
+				}
 		},900)
 		}
 
