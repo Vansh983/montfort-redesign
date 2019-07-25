@@ -40,4 +40,26 @@ $(document).ready(function(){
   $('.it7').click(function(){
 			$('body, html').animate({scrollTop:$('.contact').offset().top-50}, 1000)
 	})
+  $('.dot1').hover(function(){
+    $('.p1').toggleClass('dothover')
+  })
+  $('.dot2').hover(function(){
+    $('.p2').toggleClass('dothover')
+  })
+  $('.dot3').hover(function(){
+    $('.p3').toggleClass('dothover')
+  })
+  $('.dot4').hover(function(){
+    $('.p4').toggleClass('dothover')
+  })
+  $('.dot5').hover(function(){
+    $('.p5').toggleClass('dothover')
+  })
+  $('.dot6').hover(function(){
+    $('.p6').toggleClass('dothover')
+  })
+  $('button').click(function(){
+    $('.card').toggleClass('shadow')
+
+	})
 })

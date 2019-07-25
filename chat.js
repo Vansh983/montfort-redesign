@@ -38,8 +38,8 @@ $(function(){
 			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 		},400)
 			setTimeout(function(){
-				if (value == 'yes') {
-					$('.message-area').append('<div class="message">I will try to connect you</div>')
+				if (value == 'anu is cutieee piee') {
+					$('.message-area').append('<div class="message">Yessssss alsoooo sabseee perfeccttt</div>')
 				}else if (value == 'no') {
 					$('.message-area').append('<div class="message">No? Ok it is your call. You can just speak anything here. It will never be disclosed to anyone I promise. So, Where did the problem begin?</div>')
 				}else{
