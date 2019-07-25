@@ -4,7 +4,7 @@ $(function(){
 		var i=0;
 
 	$('input').keydown(function(e){
-		$('.message-area').animate({scrollTop:$('.message').offset().top}, 1000)
+		$('.message-area').animate({scrollTop:$('input').offset().top+1000}, 1000)
 		var x=e.keyCode;
 		var value=$('input').val();
 
@@ -12,7 +12,7 @@ $(function(){
 			$('input').val('');
 			if(i==0){
 			setTimeout(function(){
-			$('.message-area').append('<div class="user-message">'+value+'</div>')
+			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 		},400)
 			setTimeout(function(){
 			if (value == 'yes') {
@@ -27,7 +27,7 @@ $(function(){
 			}
 			else if(i==1){
 				setTimeout(function(){
-			$('.message-area').append('<div class="user-message">'+value+'</div>')
+			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 		},400)
 			setTimeout(function(){
 			$('.message-area').append('<div class="message">Okay '+value+', Would you like to speak to a teacher or a councellor?</div>')
@@ -35,7 +35,7 @@ $(function(){
 			}
 			else if(i==2){
 				setTimeout(function(){
-			$('.message-area').append('<div class="user-message">'+value+'</div>')
+			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 		},400)
 			setTimeout(function(){
 				if (value == 'yes') {
@@ -51,7 +51,7 @@ $(function(){
 
 			else if(i==3){
 				setTimeout(function(){
-			$('.message-area').append('<div class="user-message">'+value+'</div>')
+			$('.message-area').append('<div class="user-message"><p>'+value+'</p></div>')
 				}, 300)
 				setTimeout(function(){
 					if (value=='thats all') {

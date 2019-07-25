@@ -33,11 +33,9 @@ body{
 }
 
 .user-name{
-	position: fixed;
-	top: 5%;
-	left: 13.8%;
-	font-size: 3vmin;
-	transform: translate(-50%, -50%);
+	width: 90%;
+	padding-top: 1%;
+	font-size: 30px;
 	color: #fff;
 	font-family: 'Raleway', sans-serif;
 }
@@ -60,7 +58,6 @@ body{
 	margin-top: 3.2vmin;
 	color: #111;
 	padding: 2vmin;
-	line-height: 3.4vmin;
 	left: 1%;
 	transition: 300ms;
 	box-shadow: 4px 4px 20px -3px #000;
@@ -68,16 +65,17 @@ body{
 }
 
 .user-message{
+	position: relative;
 	width: 18vw;
+	height: auto;
 	transition: 300ms;
 	background: #efefef;
-	position: relative;
 	top: 10%;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 3.2vmin;
 	color: #111;
-	padding: 2vmin;
-	line-height: 3.4vmin;
+	padding: 20px;
+	overflow: hidden;
 	box-shadow: 4px 4px 20px -3px #000;
 	left: 68%;
 }
@@ -93,7 +91,7 @@ body{
 	width: 80vw;
 	height: 10vh;
 	top: 85%;
-	font-size: 3.2vmin;
+	font-size: 22px;
 	font-family: 'Raleway', sans-serif;
 	z-index: 100;
 	position: fixed;
@@ -113,4 +111,16 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	overflow-y: visible;
+}
+@media screen and (max-width:700px) {
+	.message, .user-message{
+		width: 40vw;
+	}
+	.message-area{
+		height: 70vh;
+	}
+	.user-name{
+		padding-top: 5%;
+
+	}
 }

@@ -101,13 +101,17 @@ ul{
 }
 .item{
   cursor: pointer;
-  font-family: 'quicksand';
+  font-family: 'Montserrat';
   font-size: 25px;
   padding-top: 1vh;
   padding-bottom: 1vh;
   text-align: center;
-  font-family: 'proxima nova';
   color: #fff;
+  transition: 300ms
+}
+.item:hover{
+  box-shadow: inset 7px 0 0px 0px #fff;
+
 }
 .ham_img{
   height: 25vh;
@@ -373,8 +377,14 @@ button:hover{
 .fa{
   font-size: 40px;
 }
+video{
+  margin-top: -5%;
+}
 #mess{
   padding-top: 30px;
+}
+.overflow{
+  overflow: hidden;
 }
 @media screen and (min-width:700px) {
   .member_img{
@@ -412,10 +422,7 @@ button:hover{
     width: 80%;
   }
 }
-.active{
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
+
 .white{
   background-color: #fff;
 }
@@ -483,42 +490,35 @@ button:hover{
 
       margin-left: 0 !important;
     }
-    /*
-    .noflow{
-      overflow: hidden;
-    }
-    .ith{
-      font-size: 40px;
-      color: #fff;
-      font-family: 'Montserrat';
-      text-align: center;
-      margin-top: 5vh;
-      cursor: pointer;
-    }
-    .ham{
-      padding-top: 15vh;
-    } */
+
     footer{
       width: 100%;
     }
-    /* .block-img{
-      position: relative;
-    }
-    .block-text{
-      margin-top: 0;
-      width: 60%;
-    }
-    .block1, .block2, .block3{
-      margin-top: 20vh;
-    }
-    .showoff{
+    video{
       display: none;
     }
-    .nav-ac{
-      background: #459dff;
-      box-shadow: none;
+    .tinter{
+      background-image: linear-gradient(to right, #3584a7,  #30d2be);
+      opacity: 1;
     }
-     */
+    .landtext{
+    width: 100vw;
+    padding-top: 45vh;
+    position: relative;
+    font-size: 70px;
+    color: #fff;
+    margin-left: 0;
+    text-align: center;
+    transition: 2s;
+    opacity: 0;
+    z-index: 5;
+    font-family: 'old';
+    line-height: 70px;
+    transform: translateY(10vh);
+    }
 
-
+}
+.active{
+  transform: translate(0px, 0px);
+  opacity: 1;
 }

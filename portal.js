@@ -155,21 +155,29 @@ $('.sel-phone, .st4').click(function(){
   $('.live').toggleClass('tab-ac')
   $('.select').toggleClass('tab-ac')
   $('.connecting').toggleClass('tab-ac')
-  setInterval(function(){
-    $('.connecting').addClass('tab-ac');
+  for (var i = 0; i < 1; i++) {
+    setInterval(function(){
+      $('.connecting').addClass('tab-ac');
+    }, 3000)
+    setTimeout(function(){
+      $('.slideshow1').removeClass('tab-ac')
+      $('.sett').removeClass('tab-ac')
+      $('.arrow2').removeClass('tab-ac')
+      $('.back2').removeClass('tab-ac')
+    }, 3500)
+  }
 
-  }, 3000)
-  setInterval(function(){
-    $('.done').removeClass('tab-ac');
-
-  }, 3500)
 })
 $('.back2').click(function(){
   $('.slideshow1').addClass('tab-ac')
   $('.sett').addClass('tab-ac')
   $('.arrow2').addClass('tab-ac')
   $('.back2').addClass('tab-ac')
-  $('.select').removeClass('tab-ac')
+
+  $('.done').removeClass('tab-ac');
+  $('.select').removeClass('tab-ac');
+
+
 })
 $('.a2').click(function(){
   $('.slideshow1').addClass('sl-ac')
